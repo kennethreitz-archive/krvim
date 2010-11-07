@@ -71,23 +71,14 @@ vmap <D-[> <gv
 vmap <D-]> >gv
 
 " comments
-imap <D-/> gcc
 nmap <D-/> gcc
 vmap <D-/> gcgv
 
 " Toggle show invisibles
 nmap <leader>i :set list!<CR>
 
-" Use the below highlight group when displaying bad whitespace is desired.
-highlight BadWhitespace ctermbg=red guibg=red
 
-" Make trailing whitespace be flagged as bad.
-au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
-" For full syntax highlighting:
-let python_highlight_all=1
-
-"set iskeyword+=.
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
 autocmd FileType javascript set omnifunc=javascriptcomplete#CompleteJS
@@ -96,8 +87,7 @@ autocmd FileType css set omnifunc=csscomplete#CompleteCSS
 
 set mouse=a
 
-set guifont=Inconsolata:h13
-color molokai
+
 
 map <D-Space> <Esc><Space>
 
@@ -106,4 +96,12 @@ if has("gui_macvim")
     set guioptions-=T
     macmenu &File.New\ Tab key=<nop>
     map <D-t> <Plug>PeepOpen
+    set guifont=Inconsolata:h13
+	color molokai
 endif
+" command! -nargs=0 ToggleRaibowParenthesis call rainbow_parenthsis#Toggle()
+" Use the below highlight group when displaying bad whitespace is desired.
+
+" Make trailing whitespace be flagged as bad.
+au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
+highlight BadWhitespace ctermbg=red guibg=red
