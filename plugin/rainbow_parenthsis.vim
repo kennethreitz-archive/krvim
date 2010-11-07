@@ -1,14 +1,14 @@
 "------------------------------------------------------------------------------
 "  Description: Rainbow colors for parenthsis
-"          $Id: rainbow_parenthsis.vim 51 2007-10-09 18:43:58Z krischik@users.sourceforge.net $
+"          $Id: rainbow_parenthsis.vim 29 2007-09-24 11:40:36Z krischik@users.sourceforge.net $
 "    Copyright: Copyright (C) 2006 Martin Krischik
 "   Maintainer: Martin Krischik
 "               John Gilmore
 "      $Author: krischik@users.sourceforge.net $
-"        $Date: 2007-10-09 14:43:58 -0400 (Tue, 09 Oct 2007) $
+"        $Date: 2007-09-24 13:40:36 +0200 (Mo, 24 Sep 2007) $
 "      Version: 4.0
-"    $Revision: 51 $
-"     $HeadURL: http://vim-scripts.googlecode.com/svn/trunk/1561%20Rainbow%20Parenthsis%20Bundle/plugin/rainbow_parenthsis.vim $
+"    $Revision: 29 $
+"     $HeadURL: https://vim-scripts.googlecode.com/svn/trunk/1561%20Rainbow%20Parenthsis%20Bundle/plugin/rainbow_parenthsis.vim $
 "      History: 24.05.2006 MK Unified Headers
 "               15.10.2006 MK Bram's suggestion for runtime integration
 "               06.09.2007 LH Buffer friendly (can be used in different buffers),
@@ -27,11 +27,7 @@
 " times.
 "------------------------------------------------------------------------------
 
-command! -nargs=0 RainbowParenthesesToggle call rainbow_parentheses#Toggle()
-command! -nargs=0 RainbowParenthesesLoadSquare call rainbow_parentheses#LoadSquare()
-command! -nargs=0 RainbowParenthesesLoadRound call rainbow_parentheses#LoadRound()
-command! -nargs=0 RainbowParenthesesLoadBraces call rainbow_parentheses#LoadBraces()
-command! -nargs=0 RainbowParenthesesLoadChevrons call rainbow_parentheses#Chevrons()
+command! -nargs=0 ToggleRaibowParenthesis call rainbow_parenthsis#Toggle()
 
 finish
 

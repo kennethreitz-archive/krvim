@@ -42,3 +42,5 @@ let &cpo = s:save_cpo
 unlet s:save_cpo
 
 " vim:set sw=2 sts=2:
+
+au VimEnter *.py  NERDTree

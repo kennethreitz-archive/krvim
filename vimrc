@@ -85,7 +85,7 @@ highlight BadWhitespace ctermbg=red guibg=red
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 
 " For full syntax highlighting:
-# let python_highlight_all=1
+let python_highlight_all=1
 
 "set iskeyword+=.
 
@@ -104,5 +104,6 @@ map <D-Space> <Esc><Space>
 if has("gui_macvim")
     let macvim_hig_shift_movement = 1
     set guioptions-=T
+    macmenu &File.New\ Tab key=<nop>
+    map <D-t> <Plug>PeepOpen
 endif
-
