@@ -55,7 +55,6 @@ nnoremap j gj
 nnoremap k gk
 nnoremap ; :
 
-au FocusLost * :wa
 
 let mapleader = ","
 nnoremap <leader>W :%s/\s\+$//<cr>:let @/=''<CR>
