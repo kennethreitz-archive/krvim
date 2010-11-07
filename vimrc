@@ -72,6 +72,7 @@ vmap <D-]> >gv
 
 " comments
 nmap <D-/> gcc
+imap <D-/> <Esc>:TComment<Cr>
 vmap <D-/> gcgv
 
 " Toggle show invisibles
@@ -105,3 +106,12 @@ endif
 " Make trailing whitespace be flagged as bad.
 au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 highlight BadWhitespace ctermbg=red guibg=red
+
+
+" F2 and F3 for tabs vs spaces
+nnoremap <F2> :set et <bar> retab<CR>
+nnoremap <F3> :set noet <bar> retab!<CR>
+imap <F2> <Esc>:set et <bar> retab<Cr>
+imap <F3> <Esc>:set noet <bar> retab!<Cr>
+
+
