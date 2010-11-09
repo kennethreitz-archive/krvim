@@ -108,10 +108,8 @@ au BufRead,BufNewFile *.py,*.pyw,*.c,*.h match BadWhitespace /\s\+$/
 highlight BadWhitespace ctermbg=red guibg=red
 
 
-" F2 and F3 for tabs vs spaces
-nnoremap <F2> :set et <bar> retab<CR>
-nnoremap <F3> :set noet <bar> retab!<CR>
-imap <F2> <Esc>:set et <bar> retab<Cr>
-imap <F3> <Esc>:set noet <bar> retab!<Cr>
+" F2 to alternate between tabs & spaces
+nnoremap <F2> :set invet <bar> retab!<CR>
+imap <F2> <Esc>:set invet <bar> retab!<CR>i
 
 
