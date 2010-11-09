@@ -72,7 +72,7 @@ vmap <D-]> >gv
 
 " comments
 nmap <D-/> gcc
-imap <D-/> <Esc>:TComment<Cr>
+imap <D-/> <Esc>:TComment<Cr>i
 vmap <D-/> gcgv
 
 " Toggle show invisibles
