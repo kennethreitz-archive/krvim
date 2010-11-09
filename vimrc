@@ -80,10 +80,10 @@ nmap <leader>i :set list!<CR>
 
 
 
-set nobackup       "no backup files
-set nowritebackup  "only in case you don't want a backup file while editing
+"set nobackup       "no backup files
+"set nowritebackup  "only in case you don't want a backup file while editing
 set noswapfile     "no swap files
-
+set backupdir=~/.vimback
 
 
 autocmd FileType python set omnifunc=pythoncomplete#Complete
